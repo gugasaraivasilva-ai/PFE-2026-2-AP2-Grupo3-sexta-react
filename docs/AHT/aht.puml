@@ -1,0 +1,57 @@
+@startuml
+!theme plain
+skinparam backgroundColor #FFFFFF
+skinparam activityBackgroundColor #EEF3FA
+skinparam activityBorderColor #304D76
+skinparam activityDiamondBackgroundColor #FFF3D8
+skinparam activityDiamondBorderColor #9A7024
+skinparam defaultFontName SansSerif
+skinparam defaultFontSize 15
+title AHT — Portal PKZ / One to One\nFluxo principal da versão acadêmica
+start
+:1. Conhecer o grupo;
+:2. Comparar e escolher a marca;
+if (Marca escolhida?) then (PKZ)
+  :3. Consultar apresentação, método,\nserviços, galeria, equipe e FAQ da PKZ;
+else (One to One)
+  :4. Consultar apresentação, método,\nserviços, galeria, equipe e FAQ da One to One;
+endif
+switch (Qual ação deseja realizar?)
+case (Contato)
+  :5.1–5.2 Abrir e conferir\no WhatsApp da marca;
+  :5.3 Iniciar conversa, se desejar;
+  :5.4 Voltar ao portal ou encerrar;
+case (Agendar)
+  :8.1 Conferir marca e aviso de demonstração;
+  :8.2–8.5 Consultar semana, escolher horário,\npreencher dados e confirmar;
+  while (Erro de dados ou horário?) is (sim)
+    :8.6 Corrigir dados ou escolher outro horário;
+    :8.4–8.5 Conferir dados e confirmar;
+  endwhile (não)
+  :8.7 Conferir reserva salva apenas no navegador;
+  :8.8–8.9 Consultar, cancelar ou limpar testes,\nse desejado, com confirmação para excluir;
+  :8.10 Voltar, encerrar ou acessar o painel\n(com sessão válida; caso contrário, tarefa 6);
+case (Área do Atleta)
+  :6.1–6.3 Abrir login, preencher credenciais\nou demonstração e acionar Entrar;
+  while (Acesso local inválido?) is (sim)
+    :6.6 Ler mensagem de erro;
+    :6.7 Consultar orientação de recuperação,\nse necessário (não envia e-mail);
+    if (Deseja tentar novamente?) then (sim)
+      :6.8 / 6.2–6.3 Corrigir dados e entrar novamente;
+    else (não)
+      :Encerrar tentativa ou voltar à navegação;
+      stop
+    endif
+  endwhile (não)
+  :6.5 Acessar painel;
+  :7.1–7.7 Consultar agenda, evolução e histórico;\nabrir relatório, imprimir ou editar perfil;\nusar tarefa 8 para agendar ou gerenciar;
+  :7.8 Sair da sessão ou voltar ao site;
+endswitch
+stop
+legend bottom
+  Tarefas opcionais e atalhos estão detalhados em docs/AHT.md.
+  Fluxo sem cadastro público. Login e painel são demonstrativos.
+  Reservas locais não são enviadas à empresa.
+  Se o armazenamento falhar, não considerar a reserva confirmada.
+endlegend
+@enduml
