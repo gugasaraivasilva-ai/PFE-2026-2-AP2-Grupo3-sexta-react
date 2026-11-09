@@ -1,0 +1,119 @@
+/* Página da One to One. Estilos do celular primeiro. */
+
+.suave {
+  background: var(--fundo);
+}
+
+.hero-marca {
+  background: var(--principal);
+  color: white;
+  padding: 56px 0;
+}
+
+.hero-grade {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-texto {
+  text-align: center;
+}
+
+.hero-logo {
+  background: white;
+  padding: 4px;
+  border-radius: 2px;
+  width: auto;
+  height: 58px;
+  max-width: 180px;
+  margin: 0 auto 24px;
+}
+
+.hero-texto h1 {
+  font-size: 1.9rem;
+}
+
+.hero-texto p {
+  margin: 20px auto;
+  max-width: 580px;
+  text-wrap: balance;
+  color: #e0e5f2;
+}
+
+.hero-texto .acoes {
+  justify-content: center;
+}
+
+.foto-hero {
+  width: 100%;
+  aspect-ratio: 1.92;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.oto .hero-marca {
+  background: #b0eafa;
+  color: #064c65;
+}
+
+.oto .hero-texto p {
+  color: #165b70;
+}
+
+.titulo-secao {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.titulo-secao .etiqueta {
+  margin-bottom: 24px;
+}
+
+.titulo-secao > p:last-child:not(.etiqueta) {
+  color: var(--suave);
+  font-size: 0.9rem;
+}
+
+.tres-colunas .cartao p,
+.quatro-colunas .cartao p {
+  font-size: 0.9rem;
+}
+
+.numero {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: var(--principal);
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.oto .numero {
+  background: #006b8c;
+}
+
+.quatro-colunas .cartao {
+  border-color: transparent;
+}
+
+.galeria img {
+  width: 100%;
+  aspect-ratio: 1.8;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.galeria figcaption {
+  font-size: 0.8rem;
+  color: var(--suave);
+  padding-top: 8px;
+}
+
+.profissional {
+  text-align: center;
+}
