@@ -117,3 +117,97 @@
 .profissional {
   text-align: center;
 }
+/* Retratos ilustrativos; o painel mantém seu próprio avatar. */
+.foto-profissional {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+
+.profissional h3 {
+  margin: 0 0 6px;
+}
+
+.profissional p {
+  margin: 0;
+}
+
+.faq {
+  margin-top: 32px;
+  display: grid;
+  gap: 20px;
+}
+
+.faq details {
+  padding: 16px 20px;
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+}
+
+.faq summary {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.faq p {
+  font-size: 0.9rem;
+  color: var(--suave);
+}
+
+.contato-marca {
+  background: var(--principal);
+  color: white;
+}
+
+.contato-cartao {
+  background: rgb(0 0 0 / 16%);
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.contato-cartao h2 {
+  font-size: 1.2rem;
+}
+
+.contato-cartao p {
+  color: #dae5f1;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+  .foto-profissional {
+    width: 152px;
+    height: 152px;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-grade {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+  .hero-marca {
+    padding: 88px 0 72px;
+  }
+  .hero-texto {
+    text-align: left;
+  }
+  .hero-logo {
+    margin-left: 0;
+  }
+  .hero-texto h1 {
+    font-size: 2rem;
+  }
+  .hero-texto .acoes {
+    justify-content: flex-start;
+  }
+}
+
+/* Dois CTAs diferentes para evitar confusão entre agendamento e WhatsApp. */
+.oto .hero-texto .botao.oto-principal{background:#006b80;color:white;border:2px solid #006b80}
+.oto .hero-texto .botao.oto-secundario{background:white;color:#06465b;border:2px solid #06465b}
+.oto .hero-texto .botao.oto-principal:hover{background:#00566b}
+.oto .hero-texto .botao.oto-secundario:hover{background:#e3faff}
