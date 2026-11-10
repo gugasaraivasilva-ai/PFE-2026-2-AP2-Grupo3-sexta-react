@@ -1,0 +1,16 @@
+/* Ajustes estruturais necessários quando o app inteiro ocupa #root. */
+.conta #root{display:flex;flex-direction:column;min-height:100vh}
+.conta #root>.rodape{margin-top:auto}
+.painel{display:block}
+.painel #root{min-height:100vh}
+@media(min-width:900px){.painel #root{display:grid;grid-template-columns:250px minmax(0,1fr)}}
+.menu .menu-atleta{background:#0a6b86;border:1px solid #92e5f5;color:#fff}
+.menu .menu-atleta:hover{background:#06516d}
+@media(min-width:900px) and (max-width:1250px){.menu{gap:9px}.menu a{font-size:.78rem}.menu .botao{padding:9px 11px}}
+@media (max-width:480px){.marcas{gap:8px}.marcas img{max-width:74px}}
+@media print{
+ body.imprimindo #root{display:block!important}
+ body.imprimindo #root>:not(#relatorio-modal){display:none!important}
+ body.imprimindo #relatorio-modal[open]{position:static;display:block;max-width:none;width:100%;border:0;max-height:none}
+ body.imprimindo #relatorio-modal .acoes{display:none}
+}
