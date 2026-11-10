@@ -1,0 +1,41 @@
+/* Nova página de Fisioterapia. Segue a paleta e os componentes do grupo. */
+.fisio{--principal:#0a647b;--marinho:#080f2f}
+.fisio-hero{background:#ddf3f8;padding:48px 0;color:#113a4b}
+.fisio-hero-grid{display:grid;gap:30px;align-items:center}
+.fisio-abertura{text-align:center}
+.fisio-abertura .etiqueta{color:#0c6079;margin-bottom:14px}
+.fisio-abertura h1{font-size:2rem;line-height:1.2;max-width:650px}
+.fisio-abertura>p:not(.etiqueta){color:#365e70;max-width:590px;margin:18px auto}
+.fisio-abertura .acoes{justify-content:center}
+.fisio-botao{background:#005e75;color:white}
+.fisio-hero-imagem{overflow:hidden;border-radius:12px;background:#bfdfe7}
+.fisio-hero-imagem img{width:100%;height:260px;object-fit:cover}
+.fisio-hero-imagem figcaption{font-size:.75rem;color:#355263;padding:7px 12px}
+.fisio .titulo-secao{text-align:center;margin-bottom:32px}
+.fisio .titulo-secao p:not(.etiqueta){color:var(--suave);margin:12px auto;max-width:700px}
+.fisio .cartao{border:1px solid #dbe7ed}
+.fisio-servicos{gap:18px}
+.fisio-servicos .cartao h3{font-size:1.08rem;margin-bottom:8px}
+.fisio-servicos .cartao p{font-size:.95rem}
+.fisio-passo{display:inline-block;font-size:.8rem;font-weight:bold;color:#0d6177;background:#dbf2f5;border-radius:20px;padding:6px 12px;margin-bottom:18px}
+.fisio-duas-colunas{display:grid;align-items:center;gap:26px}
+.fisio-movimento-texto p{color:#566170}
+.fisio-movimento-texto .etiqueta{color:#0b6578}
+.fisio-movimento-texto h2{margin-bottom:18px}
+.fisio-imagem-lateral{width:100%;max-height:420px;object-fit:cover;border-radius:10px}
+.fisio-galeria img{width:100%;height:230px;object-fit:cover;border-radius:10px}
+.fisio-galeria figcaption{padding-top:8px;color:#626878;font-size:.85rem}
+.fisio-faq-container{max-width:920px}
+.fisio-faq{display:grid;gap:12px;margin-top:25px}
+.fisio-faq details{border:1px solid #d4e5ec;border-radius:8px;background:#fff;padding:17px 20px}
+.fisio-faq summary{font-weight:bold}
+.fisio-faq p{color:#596677;font-size:.94rem}
+.fisio-contato{background:#0b4b62;color:white}
+.fisio-contato .contato-cartao{background:rgba(0,0,0,.12);border-radius:10px;padding:26px}
+.fisio-contato .contato-cartao p{color:#e3f3f7}
+.fisio-contato .etiqueta{color:#a1e8eb}
+.fisio-contato .botao.fisio-contato-secundario{background:transparent;color:white;border:1px solid #d9f5fa}
+@media(min-width:480px){.fisio-hero-imagem img{height:300px}.fisio-galeria img{height:275px}}
+@media(min-width:640px){.fisio-hero{padding:60px 0}.fisio-abertura h1{font-size:2.3rem}.fisio-hero-imagem img{height:350px}.fisio-galeria img{height:250px}}
+@media(min-width:900px){.fisio-hero{padding:84px 0}.fisio-hero-grid{grid-template-columns:1fr 1fr;gap:50px}.fisio-abertura{text-align:left}.fisio-abertura h1{font-size:2.6rem}.fisio-abertura>p:not(.etiqueta){margin:18px 0}.fisio-abertura .acoes{justify-content:flex-start}.fisio-hero-imagem img{height:390px}.fisio-duas-colunas{grid-template-columns:1fr 1fr;gap:55px}.fisio-galeria img{height:310px}}
+@media(min-width:1200px){.fisio-hero-grid{gap:70px}.fisio-abertura h1{font-size:3rem}.fisio-hero-imagem img{height:440px}.fisio-galeria img{height:340px}}
