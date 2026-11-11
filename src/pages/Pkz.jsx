@@ -122,3 +122,68 @@ export default function Pkz() {
         </div>
       </section>
 
+      {/* SERVIÇOS */}
+      <section className="secao suave" id="servicos">
+        <div className="container">
+
+          <div className="titulo-secao">
+            <p className="etiqueta">
+              COMO PODEMOS ACOMPANHAR VOCÊ
+            </p>
+
+            <h2>
+              Do primeiro teste aos próximos passos no esporte
+            </h2>
+
+            <p>
+              Cada etapa ajuda a transformar o treinamento em um processo
+              acompanhado e compreensível para atletas e responsáveis.
+            </p>
+          </div>
+
+          <div className="quatro-colunas">
+
+            <article className="cartao">
+              <h3>Avaliação das capacidades físicas</h3>
+
+              <p>
+                Uma bateria de testes reúne informações sobre o desempenho
+                do atleta. A leitura desses resultados ajuda a identificar
+                aspectos que merecem atenção no planejamento.
+              </p>
+            </article>
+
+            <article className="cartao">
+              <h3>Treinamento orientado à modalidade</h3>
+
+              <p>
+                O trabalho considera as exigências do esporte praticado.
+                Exercícios e objetivos são organizados para desenvolver as
+                capacidades relevantes à rotina de cada atleta.
+              </p>
+            </article>
+
+            <article className="cartao">
+              <h3>Registro das sessões</h3>
+
+              <p>
+                O acompanhamento inclui informações sobre o que foi
+                trabalhado e observações do treino. Esses registros ajudam
+                a dar continuidade ao processo entre uma sessão e outra.
+              </p>
+            </article>
+
+            <article className="cartao">
+              <h3>Evolução explicada</h3>
+
+              <p>
+                Os resultados das avaliações ganham sentido quando são
+                acompanhados de uma interpretação. Nem toda mudança
+                numérica representa melhora ou piora isoladamente.
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
