@@ -35,3 +35,27 @@ test('hub contempla as duas marcas na primeira linha e Fisioterapia abaixo',()=>
   assert.match(ler('src/styles/index.css'),/\.hub \.card-fisio-hub/);
 });
 
+test('página de Fisioterapia e navegação possuem mídia local e conteúdo',()=>{
+  const fisio=ler('src/pages/Fisioterapia.jsx');
+  const layout=ler('src/components/SiteLayout.jsx');
+  assert.match(fisio,/avaliação/i);
+  assert.match(fisio,/acompanhamento/i);
+  assert.match(fisio,/DÚVIDAS FREQUENTES/i);
+  assert.match(fisio,/<details>/);
+  assert.match(layout,/to="\/fisioterapia"/);
+  assert.match(layout,/Fisioterapia/);
+  for(const nome of ['fisio_hub.webp','fisio_movimento.webp','fisio_avaliacao.webp','fisio_acompanhamento.webp']){
+    assert.ok(existsSync(join(raiz,'public','assets',nome)),`Imagem faltando: ${nome}`);
+  }
+});
+
+test('configuração de produção Vite/Vercel contempla SPA e documentos de entrega',()=>{
+  const p=JSON.parse(ler('package.json'));
+  const v=JSON.parse(ler('vercel.json'));
+  assert.ok(p.dependencies.react && p.dependencies['react-router-dom'] && p.devDependencies.vite);
+  assert.equal(p.scripts.build,'vite build');
+  assert.ok(v.rewrites.some(r=>r.destination==='/index.html'));
+  for(const documento of ['Requisitos.md','Doc visão.md','Sprint-React-Fisioterapia.md','Daily-Scrum-React.md','Fisioterapia-Requisito-Novembro.md']){
+    assert.ok(existsSync(join(raiz,'docs',documento)),`Documentação faltando: ${documento}`);
+  }
+});
