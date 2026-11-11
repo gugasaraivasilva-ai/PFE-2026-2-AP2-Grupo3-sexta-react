@@ -60,3 +60,81 @@
 .titulo-secao .etiqueta {
     margin-bottom: 24px;
 }
+.titulo-secao>p:last-child:not(.etiqueta) {
+    color: var(--suave);
+    font-size: 0.9rem;
+}
+
+.tres-colunas .cartao p,
+.quatro-colunas .cartao p {
+    font-size: 0.9rem;
+}
+
+.numero {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: var(--principal);
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.quatro-colunas .cartao {
+    border-color: transparent;
+}
+
+.galeria img {
+    width: 100%;
+    aspect-ratio: 1.8;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.galeria figcaption {
+    font-size: 0.8rem;
+    color: var(--suave);
+    padding-top: 8px;
+}
+
+.profissional {
+    text-align: center;
+}
+
+/* Retratos ilustrativos; o painel mantém seu próprio avatar. */
+.foto-profissional {
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+
+.profissional h3 {
+    margin: 0 0 6px;
+}
+
+.profissional p {
+    margin: 0;
+}
+
+.faq {
+    margin-top: 32px;
+    display: grid;
+    gap: 20px;
+}
+
+.faq details {
+    padding: 16px 20px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+}
+
+.faq summary {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
