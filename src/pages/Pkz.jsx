@@ -187,3 +187,68 @@ export default function Pkz() {
         </div>
       </section>
 
+      {/* EQUIPE */}
+      <section className="secao suave" id="equipe">
+        <div className="container">
+
+          <div className="titulo-secao">
+            <p className="etiqueta">EQUIPE</p>
+
+            <h2>Pessoas que acompanham cada etapa</h2>
+
+            <p>
+              Avaliação, orientação durante o treino e análise da evolução
+              fazem parte do acompanhamento. Retratos ilustrativos. Nomes e
+              formações serão preenchidos com os dados da equipe.
+            </p>
+          </div>
+
+          <div className="tres-colunas">
+
+            <article className="cartao profissional">
+              <img
+                alt="Retrato ilustrativo de uma profissional de avaliação"
+                className="foto-profissional"
+                height="480"
+                loading="lazy"
+                src="/assets/profissional-avaliacao.webp"
+                width="480"
+              />
+
+              <h3>Avaliação</h3>
+              <p>Entender o ponto de partida.</p>
+            </article>
+
+            <article className="cartao profissional">
+              <img
+                alt="Retrato ilustrativo de um treinador"
+                className="foto-profissional"
+                height="480"
+                loading="lazy"
+                src="/assets/profissional-treinador.webp"
+                width="480"
+              />
+
+              <h3>Treinamento</h3>
+              <p>Orientar a prática e a execução.</p>
+            </article>
+
+            <article className="cartao profissional">
+              <img
+                alt="Retrato ilustrativo de uma profissional de acompanhamento"
+                className="foto-profissional"
+                height="480"
+                loading="lazy"
+                src="/assets/profissional-evolucao.webp"
+                width="480"
+              />
+
+              <h3>Acompanhamento</h3>
+              <p>Interpretar resultados e próximos passos.</p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+
