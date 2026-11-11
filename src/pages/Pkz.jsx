@@ -301,5 +301,61 @@ export default function Pkz() {
               </p>
             </details>
 
+            <details>
+              <summary>
+                Como posso entender a evolução do meu filho?
+              </summary>
+
+              <p>
+                A equipe utiliza avaliações, reavaliações e registros das
+                sessões para acompanhar o processo. Os resultados devem
+                ser explicados junto com o contexto do treino, para que
+                os responsáveis entendam o significado das mudanças.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Como conhecer os formatos de acompanhamento?
+              </summary>
+
+              <p>
+                O primeiro passo é conversar com a equipe e conhecer o
+                trabalho. A frequência e os serviços incluídos podem
+                variar conforme a proposta escolhida. Entre em contato
+                para tirar dúvidas e consultar as opções.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Quais modalidades podem ser atendidas?
+              </summary>
+
+              <p>
+                O treinamento é organizado conforme as exigências de cada
+                esporte, e modalidades diferentes pedem capacidades
+                diferentes. Converse com a equipe para confirmar o
+                atendimento da modalidade do atleta.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Como consultar horários e agendar uma visita?
+              </summary>
+
+              <p>
+                Na página Agendar é possível ver os horários disponíveis
+                e reservar uma avaliação. Para combinar uma visita ou
+                tirar dúvidas, fale com a equipe pelo WhatsApp.
+              </p>
+            </details>
+
+          </div>
+        </div>
+      </section>
+
+
 
 
