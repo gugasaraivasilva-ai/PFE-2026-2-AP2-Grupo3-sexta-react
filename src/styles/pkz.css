@@ -138,3 +138,62 @@
     font-weight: bold;
     font-size: 0.95rem;
 }
+
+.faq p {
+    font-size: 0.9rem;
+    color: var(--suave);
+}
+
+.contato-marca {
+    background: var(--principal);
+    color: white;
+}
+
+.contato-cartao {
+    background: rgb(0 0 0 / 16%);
+    border-radius: 8px;
+    padding: 28px;
+}
+
+.contato-cartao h2 {
+    font-size: 1.2rem;
+}
+
+.contato-cartao p {
+    color: #dae5f1;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+    .foto-profissional {
+        width: 152px;
+        height: 152px;
+    }
+}
+
+@media (min-width: 900px) {
+    .hero-grade {
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+    }
+
+    .hero-marca {
+        padding: 88px 0 72px;
+    }
+
+    .hero-texto {
+        text-align: left;
+    }
+
+    .hero-logo {
+        margin-left: 0;
+    }
+
+    .hero-texto h1 {
+        font-size: 2rem;
+    }
+
+    .hero-texto .acoes {
+        justify-content: flex-start;
+    }
+}
