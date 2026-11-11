@@ -356,6 +356,60 @@ export default function Pkz() {
         </div>
       </section>
 
+      {/* CONTATO */}
+      <section className="secao contato-marca" id="contato">
+        <div className="container duas-colunas">
+
+          <article className="contato-cartao">
+            <h2>Sua dúvida não apareceu aqui?</h2>
+
+            <p>
+              Fale com a equipe e conte a idade, a modalidade e o objetivo
+              do atleta.
+            </p>
+
+            <div className="acoes">
+              <a
+                className="botao claro"
+                href="https://wa.me/5521972657266"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Tirar dúvidas pelo WhatsApp ↗
+              </a>
+
+              <Link
+                className="link-claro"
+                to="/agendamento?marca=pkz"
+              >
+                Ver horários
+              </Link>
+            </div>
+          </article>
+
+          <article className="contato-cartao">
+            <h2>Já é atleta?</h2>
+
+            <p>
+              Acesse agenda, histórico de treinos e evolução.
+            </p>
+
+            <Link
+              className="botao claro"
+              to="/login?marca=pkz"
+            >
+              Acessar Área do Atleta →
+            </Link>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+  );
+}
+
+
 
 
 
