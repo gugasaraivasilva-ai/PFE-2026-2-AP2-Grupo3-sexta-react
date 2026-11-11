@@ -251,4 +251,55 @@ export default function Pkz() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="secao" id="faq">
+        <div className="container">
+
+          <p className="etiqueta">ANTES DE COMEÇAR</p>
+
+          <h2>
+            Entenda como funciona o acompanhamento
+          </h2>
+
+          <p>
+            Reunimos dúvidas sobre público, avaliação, treinamento e
+            contato com a equipe.
+          </p>
+
+          <div className="faq">
+
+            <details>
+              <summary>Para quem é a PKZ?</summary>
+
+              <p>
+                O foco principal é o desenvolvimento esportivo de atletas
+                infantojuvenis. A equipe considera a idade, a modalidade e
+                o momento de cada atleta para orientar o acompanhamento.
+                Converse conosco para entender o encaixe no programa.
+              </p>
+            </details>
+
+            <details>
+              <summary>O que acontece na avaliação física?</summary>
+
+              <p>
+                São realizados testes de capacidades como salto,
+                velocidade, agilidade e reação. O objetivo é conhecer o
+                ponto de partida e reunir informações para o planejamento
+                do treino.
+              </p>
+            </details>
+
+            <details>
+              <summary>O treinamento é igual para todos?</summary>
+
+              <p>
+                Não. A proposta é individualizada e considera as exigências
+                do esporte praticado. As capacidades trabalhadas e a forma
+                de organizar os exercícios dependem das necessidades de
+                cada atleta.
+              </p>
+            </details>
+
+
 
