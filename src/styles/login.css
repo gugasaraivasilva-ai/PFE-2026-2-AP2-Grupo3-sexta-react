@@ -1,0 +1,52 @@
+/* Entrada da Área do Atleta. Estilos do celular primeiro. */
+
+.conta {
+  background: var(--fundo);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.acesso-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+}
+
+.acesso {
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+}
+
+.acesso h1 {
+  font-size: 1.5rem;
+}
+
+.acesso > p {
+  font-size: 0.9rem;
+}
+
+.abas {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 28px;
+  font-size: 0.9rem;
+  color: var(--suave);
+}
+
+.abas [aria-current] {
+  color: var(--principal);
+  font-weight: bold;
+}
+
+@media (min-width: 480px) {
+  .acesso-container {
+    padding: 50px 20px;
+  }
+  .acesso {
+    padding: 30px;
+  }
+}
