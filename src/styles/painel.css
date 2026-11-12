@@ -1,0 +1,282 @@
+/* Painel do aluno e impressão dos relatórios. Estilos do celular primeiro. */
+
+.painel {
+  background: var(--fundo);
+}
+
+.lateral {
+  background: var(--marinho);
+  color: white;
+  padding: 24px 20px;
+}
+
+.lateral .marcas {
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.lateral nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.lateral nav a {
+  padding: 10px 12px;
+  border-radius: 7px;
+  color: #c0c6d8;
+  font-size: 0.9rem;
+}
+
+.lateral nav a:hover,
+.lateral nav [aria-current] {
+  background: #00506a;
+  color: white;
+  text-decoration: none;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0 20px;
+  padding-top: 24px;
+  border-top: 1px solid #3a435e;
+}
+
+.perfil .avatar {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  margin: 0;
+}
+
+.perfil strong {
+  display: block;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.perfil span:not(.avatar) {
+  color: #a9b6cc;
+  font-size: 0.8rem;
+}
+
+.painel-conteudo {
+  padding: 28px 20px;
+  min-width: 0;
+}
+
+.painel-topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.painel-topo > div {
+  min-width: 0;
+}
+
+.painel-detalhes {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.painel-topo h1 {
+  font-size: 1.65rem;
+  overflow-wrap: anywhere;
+}
+
+.painel-topo p {
+  margin: 3px 0 0;
+  font-size: 0.9rem;
+  color: var(--suave);
+}
+
+.resumo-grade {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.resumo-grade .cartao {
+  padding: 20px;
+}
+
+.resumo-grade p {
+  margin: 0 0 6px;
+  font-size: 0.82rem;
+}
+
+.resumo-grade strong {
+  font-size: 1.05rem;
+}
+
+.painel-conteudo h2 {
+  font-size: 1.1rem;
+}
+
+.painel-agenda,
+.painel-detalhes,
+.configuracoes {
+  margin-bottom: 28px;
+}
+
+.linha-titulo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.linha-titulo a {
+  font-size: 0.88rem;
+}
+
+.selo {
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #def4e4;
+  color: #166b31;
+  font-size: 0.78rem;
+  font-weight: bold;
+}
+
+.suporte {
+  color: var(--suave);
+  font-size: 0.83rem;
+}
+
+.grafico {
+  height: 220px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background: var(--fundo);
+  border-radius: 8px;
+  padding: 18px 12px;
+  margin: 18px 0;
+}
+
+.grafico > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 20%;
+}
+
+.grafico strong {
+  font-size: 0.8rem;
+  color: var(--azul);
+}
+
+.grafico small {
+  font-size: 0.73rem;
+}
+
+.barra {
+  display: block;
+  width: 70%;
+  border-radius: 4px 4px 0 0;
+  background: #147b9a;
+}
+
+.barra-60 {
+  height: 84px;
+}
+
+.barra-75 {
+  height: 105px;
+}
+
+.barra-85 {
+  height: 119px;
+}
+
+.barra-92 {
+  height: 129px;
+}
+
+.observacao {
+  background: var(--fundo);
+  border-radius: 7px;
+  padding: 16px;
+  font-size: 0.86rem;
+}
+
+.configuracoes form {
+  max-width: 460px;
+}
+
+.painel-rodape {
+  color: var(--suave);
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 640px) {
+  .resumo-grade {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .painel-conteudo {
+    padding: 36px;
+  }
+}
+
+@media (min-width: 900px) {
+  .painel {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+  }
+  .lateral {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    min-height: 100vh;
+  }
+  .lateral nav {
+    flex-direction: column;
+  }
+  .perfil {
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .painel-detalhes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .resumo-grade {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .painel-conteudo {
+    padding: 36px 40px;
+  }
+}
+
+@media print {
+  body.imprimindo > :not(#relatorio-modal) {
+    display: none !important;
+  }
+  body.imprimindo {
+    display: block;
+    background: white;
+  }
+  #relatorio-modal[open] {
+    position: static;
+    display: block;
+    max-width: none;
+    width: 100%;
+    border: 0;
+    max-height: none;
+  }
+  #relatorio-modal .acoes {
+    display: none;
+  }
+  dialog::backdrop {
+    background: transparent;
+  }
+}
