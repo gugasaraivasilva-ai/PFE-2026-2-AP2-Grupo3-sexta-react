@@ -12,7 +12,7 @@ export default function Fisioterapia() {
 <p>Uma apresentação da nova área de Fisioterapia do grupo, com foco em mobilidade, acompanhamento e atenção às necessidades individuais.</p>
 <div className="acoes"><Link className="botao fisio-botao" to="#como-funciona">Conheça a proposta</Link><Link className="botao secundario" to="/#contato">Falar com o grupo</Link></div>
 </div>
-<figure className="fisio-hero-imagem"><img alt="Foto ilustrativa de acompanhamento de movimento por um profissional" fetchPriority="high" height="740" src="/assets/fisio_avaliacao.webp" width="1200" /><figcaption>Imagem ilustrativa</figcaption></figure>
+<figure className="fisio-hero-imagem"><img alt="Foto ilustrativa de fisioterapeuta acompanhando exercício com faixa elástica" fetchPriority="high" height="796" src="/assets/fisioterapia.png" width="1187" /><figcaption>Imagem ilustrativa</figcaption></figure>
 </div>
 </section>
 <section className="secao" id="como-funciona">
@@ -28,14 +28,14 @@ export default function Fisioterapia() {
 <section className="secao suave" id="movimento">
 <div className="container fisio-duas-colunas">
 <div className="fisio-movimento-texto"><p className="etiqueta">MOVIMENTO E BEM-ESTAR</p><h2>Cuidado para a sua rotina</h2><p>Mobilidade, conforto e autonomia são temas importantes para pessoas com diferentes perfis. A indicação de cada tipo de atendimento depende da avaliação de um profissional habilitado.</p><p>A nova página apresenta a proposta geral; procedimentos, especialidades, profissionais e horários serão informados pela equipe quando estiverem confirmados.</p></div>
-<img alt="Foto ilustrativa de exercícios de movimento acompanhados por profissional" className="fisio-imagem-lateral" height="650" src="/assets/fisio_movimento.webp" width="1000" />
+<img alt="Foto ilustrativa de sala de fisioterapia com macas e equipamentos" className="fisio-imagem-lateral" height="792" src="/assets/salao-para-fisioterapia.png" width="1183" />
 </div>
 </section>
 <section className="secao" id="ambiente">
 <div className="container"><div className="titulo-secao"><p className="etiqueta">ACOMPANHAMENTO</p><h2>Atenção em cada etapa</h2></div>
 <div className="duas-colunas fisio-galeria">
-<figure><img alt="Imagem ilustrativa de orientação individual durante exercício" height="650" src="/assets/fisio_acompanhamento.webp" width="1000" /><figcaption>Orientação e movimento</figcaption></figure>
-<figure><img alt="Imagem ilustrativa de avaliação física individual" height="740" src="/assets/fisio_avaliacao.webp" width="1200" /><figcaption>Avaliação individual</figcaption></figure>
+<figure><img alt="Imagem ilustrativa de fisioterapeuta orientando movimento de ombro" height="792" src="/assets/alongamento.png" width="792" /><figcaption>Orientação e movimento</figcaption></figure>
+<figure><img alt="Imagem ilustrativa de fisioterapeuta avaliando o joelho de um paciente na maca" height="540" src="/assets/massagem.png" width="806" /><figcaption>Avaliação individual</figcaption></figure>
 </div>
 </div>
 </section>
