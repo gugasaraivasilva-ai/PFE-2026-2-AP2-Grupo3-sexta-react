@@ -206,3 +206,101 @@ small {
   background: var(--marinho);
   border-radius: 0 0 8px 8px;
 }
+
+.menu.aberto {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 18px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.9rem;
+}
+
+.menu-botao {
+  flex-shrink: 0;
+}
+
+.botao {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 11px 22px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: var(--principal);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.botao:hover {
+  filter: brightness(1.12);
+  text-decoration: none;
+}
+
+.botao.claro {
+  background: white;
+  color: var(--marinho);
+}
+
+.botao.azul {
+  background: #006285;
+  color: white;
+}
+
+.botao.escuro {
+  background: var(--marinho);
+  color: white;
+}
+
+.botao.secundario {
+  background: white;
+  border-color: var(--borda);
+  color: var(--principal);
+}
+
+.botao.perigo {
+  background: #a62632;
+}
+
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.link-claro {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.texto-link,
+.link-botao {
+  color: var(--azul);
+  font-weight: bold;
+}
+
+.link-botao {
+  display: inline-block;
+  padding: 8px 0;
+  background: transparent;
+  border: 0;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.link-botao:hover,
+.texto-link:hover {
+  text-decoration: underline;
+}
