@@ -1,0 +1,117 @@
+/* Página inicial do grupo. Estilos do celular primeiro. */
+
+.hub {
+  background: #11141d;
+  color: white;
+}
+
+.hub-hero {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hub .etiqueta {
+  color: #bec5d9;
+}
+
+.hub-hero h1 {
+  max-width: 740px;
+}
+
+.hub-hero > p:not(.etiqueta) {
+  max-width: 700px;
+  color: #c1c5cf;
+  margin: 20px 0;
+}
+
+.banner {
+  margin-top: 24px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.banner figcaption {
+  padding: 12px 16px;
+  font-size: 0.8rem;
+}
+
+.marcas-cards {
+  margin-top: 28px;
+}
+
+.hub .cartao {
+  color: var(--texto);
+}
+
+.card-logo {
+  width: auto;
+  height: 46px;
+  max-width: 150px;
+  margin-bottom: 24px;
+}
+
+/* A foto ganha altura conforme a tela aumenta. */
+@media (min-width: 480px) {
+  .banner img {
+    height: 280px;
+  }
+}
+
+@media (min-width: 640px) {
+  .hub-hero {
+    padding-top: 56px;
+  }
+  .banner img {
+    height: 340px;
+  }
+}
+
+@media (min-width: 900px) {
+  .hub-hero {
+    padding-top: 72px;
+  }
+  .hub-hero h1 {
+    font-size: 2.3rem;
+  }
+  .banner img {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner img {
+    height: 480px;
+  }
+}
+
+/* Cards com fotos: PKZ e One to One na primeira linha, Fisioterapia abaixo. */
+.introducao-caminhos{max-width:740px;color:#c1c5cf}
+.hub .marcas-cards{align-items:stretch}
+.hub .card-marca{overflow:hidden;padding:0;display:flex;flex-direction:column;border:1px solid #343e5a}
+.hub .card-marca .foto-link{display:block;overflow:hidden}
+.hub .card-marca .foto-link img{height:220px;width:100%;object-fit:cover;transition:transform .2s ease}
+.hub .card-marca .foto-link:hover img{transform:scale(1.035)}
+.hub .card-marca-conteudo{padding:24px;display:flex;flex-direction:column;flex:1;align-items:flex-start}
+.hub .card-logo{height:40px;max-width:150px;margin-bottom:18px}
+.hub .card-marca h3{font-size:1.14rem;margin-bottom:8px;color:#182038}
+.hub .card-marca p{flex:1;font-size:.94rem;margin:8px 0 22px}
+.hub .card-fisio-hub{margin-top:24px;padding:0;overflow:hidden;background:#08344f;color:#fff;border:1px solid #3b5269}
+.hub .foto-fisio{display:block;height:230px;overflow:hidden}
+.hub .foto-fisio img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.hub .fisio-hub-conteudo{padding:28px}
+.hub .fisio-hub-conteudo .etiqueta{margin-bottom:8px;color:#a6e4ed}
+.hub .fisio-hub-conteudo h3{font-size:1.55rem}
+.hub .fisio-hub-conteudo p:not(.etiqueta){max-width:570px;color:#e2edf4;margin:12px 0 24px}
+.hub .contatos-hub .botao.claro{background:#fff;color:#081c32}
+@media(min-width:480px){.hub .card-marca .foto-link img{height:260px}}
+@media(min-width:640px){.hub .card-marca .foto-link img{height:225px}}
+@media(min-width:900px){.hub .card-marca .foto-link img{height:290px}.hub .card-fisio-hub{display:grid;grid-template-columns:1.1fr .9fr;min-height:365px}.hub .foto-fisio{height:100%}.hub .fisio-hub-conteudo{padding:42px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.hub .fisio-hub-conteudo h3{font-size:1.9rem}}
+@media(min-width:1200px){.hub .card-marca .foto-link img{height:340px}.hub .fisio-hub-conteudo{padding:54px}}
+@media(prefers-reduced-motion:reduce){.hub .card-marca .foto-link img{transition:none}}
