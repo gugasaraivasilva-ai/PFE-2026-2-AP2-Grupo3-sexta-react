@@ -99,3 +99,110 @@ small {
 [hidden] {
   display: none !important;
 }
+
+:focus-visible {
+  outline: 3px solid #1689b8;
+  outline-offset: 4px;
+}
+
+.container {
+  width: calc(100% - 32px);
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.pular {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  padding: 12px;
+  background: white;
+  color: var(--marinho);
+  transform: translateY(-180%);
+}
+
+.pular:focus {
+  transform: none;
+}
+
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.cabecalho {
+  color: white;
+  background: var(--marinho);
+}
+
+.topo {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 12px 0;
+}
+
+.topo > .link-claro {
+  flex: 1;
+  min-width: 0;
+  text-align: right;
+}
+
+.marcas {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.marcas img {
+  background: white;
+  padding: 2px;
+  border-radius: 2px;
+  width: auto;
+  max-width: 82px;
+  height: 34px;
+}
+
+.marcas span {
+  color: #a8afc5;
+}
+
+.marca img {
+  background: white;
+  padding: 3px;
+  border-radius: 2px;
+  height: 38px;
+  width: auto;
+  max-width: 130px;
+}
+
+.menu-botao {
+  border: 1px solid #8490a6;
+  border-radius: 6px;
+  color: white;
+  background: transparent;
+  padding: 6px 12px;
+  font-size: 1.4rem;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  padding: 18px;
+  background: var(--marinho);
+  border-radius: 0 0 8px 8px;
+}
