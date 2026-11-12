@@ -1,0 +1,161 @@
+/* Agenda e reservas. Estilos do celular primeiro. */
+
+.agenda-pagina {
+  background: var(--fundo);
+}
+
+.agenda-container {
+  max-width: 1000px;
+  padding: 44px 0 64px;
+}
+
+.agenda-container > .etiqueta {
+  margin-top: 32px;
+}
+
+.agenda-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.agenda-topo h2 {
+  font-size: 1rem;
+  order: -1;
+  width: 100%;
+  text-align: center;
+}
+
+.agenda-topo .botao {
+  padding: 9px 12px;
+}
+
+.legenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 0.8rem;
+  padding: 12px 0;
+}
+
+.legenda span:first-child {
+  color: #176349;
+  font-weight: bold;
+}
+
+.ajuda-mobile {
+  font-size: 0.8rem;
+}
+
+.tabela-rolagem {
+  overflow-x: auto;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 650px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid var(--borda);
+}
+
+th {
+  font-size: 0.85rem;
+  color: var(--suave);
+}
+
+th small {
+  display: block;
+  font-weight: normal;
+}
+
+.slot {
+  width: 100%;
+  min-height: 42px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--principal);
+  color: white;
+  font-size: 0.8rem;
+}
+
+.slot:hover:not(:disabled) {
+  background: #006285;
+}
+
+.slot:disabled {
+  background: #edf0f5;
+  color: #596376;
+  opacity: 1;
+}
+
+.minhas-reservas {
+  margin-top: 24px;
+}
+
+.dados-teste {
+  margin: 28px 0;
+  padding: 18px;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+}
+
+.dados-teste summary {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.dados-teste .link-botao {
+  margin-left: 16px;
+}
+
+pre {
+  max-height: 320px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  padding: 16px;
+  background: #e9edf4;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 640px) {
+  .agenda-topo h2 {
+    order: 0;
+    width: auto;
+  }
+  .agenda-cartao {
+    padding: 28px;
+  }
+}
+
+@media (min-width: 900px) {
+  .ajuda-mobile {
+    display: none;
+  }
+}
+
+/* Seletor de dias para evitar rolagem excessiva no celular. */
+.dias-mobile{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:12px}
+.dias-mobile button{min-height:44px;padding:6px;border:1px solid var(--borda);border-radius:6px;background:white;color:var(--principal);font-weight:bold;font-size:.85rem}
+.dias-mobile button[aria-pressed="true"]{background:var(--principal);border-color:var(--principal);color:#fff}
+.dias-mobile small{display:block;font-weight:normal}
+@media(max-width:639px){
+#grade[data-dia="0"] :is(th,td):not(:first-child,:nth-child(2)),
+#grade[data-dia="1"] :is(th,td):not(:first-child,:nth-child(3)),
+#grade[data-dia="2"] :is(th,td):not(:first-child,:nth-child(4)),
+#grade[data-dia="3"] :is(th,td):not(:first-child,:nth-child(5)),
+#grade[data-dia="4"] :is(th,td):not(:first-child,:nth-child(6)),
+#grade[data-dia="5"] :is(th,td):not(:first-child,:nth-child(7)){display:none}
+}
+@media(min-width:640px){.dias-mobile{display:none}}
